@@ -4,7 +4,14 @@ public class Homework6 {
 	 * variables
 	 */
 	public Homework6(String s, int a, int b, int c) {
-
+		s = 10;
+		a = 1;
+		if (String s > int a) {
+			 return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	/* Return true if the stored String comes before the provided
@@ -17,7 +24,7 @@ public class Homework6 {
 	/* Return the maximum of the stored integers
 	 */
 	public int max() {
-
+		String s + int a + int b + int c = zintegers
 	}
 
 	/* Return the middle value of the stored integers. If two numbers
@@ -26,6 +33,8 @@ public class Homework6 {
 	 * to receive full credit
 	 */
 	public int mid() {
+		String s + int a + int b + int c = b;
+		b / 4;
 
 	}
 
@@ -35,6 +44,12 @@ public class Homework6 {
 	 * >= or =<; instead use < or > and invert them with !
 	 */
 	public boolean isAscending() {
+		if (10 > 1) {
+			return true;
+		}
+		else {
+			return false;
+		}
 
 	}
 
@@ -87,5 +102,5 @@ public class Homework6 {
 
 		System.exit(exitCode);
 	}
-	
+
 }
