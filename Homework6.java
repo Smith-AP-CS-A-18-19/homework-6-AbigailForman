@@ -3,29 +3,50 @@ public class Homework6 {
 	/* Finish the constructor and create any necessary instance
 	 * variables
 	 */
+	 String s;
+	 int a;
+	 int b;
+	 int c;
+
+
 	public Homework6(String s, int a, int b, int c) {
-		s = 10;
-		a = 1;
-		if (String s > int a) {
-			 return true;
-		}
-		else {
-			return false;
-		}
+		this.s = s;
+		this.a = a;
+		this.b = b;
+		this.c = c;
+
 	}
+
 
 	/* Return true if the stored String comes before the provided
 	 * String lexicographically, return false if it does not
 	 */
-	public boolen isBefore(String other) {
-
+	public boolean isBefore(String other) {
+		if ((other.compareTo(s)) > 0) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/* Return the maximum of the stored integers
 	 */
 	public int max() {
-		String s + int a + int b + int c = zintegers
+		if (a < b) {
+			if (b < c) {
+				return c;
+			} else if (b > c) {
+				return b;
+			}
+		} else if (b > c) {
+
+		} if (c > a) {
+			return a;
+		} else {
+			return -1;
+		}
 	}
+
 
 	/* Return the middle value of the stored integers. If two numbers
 	 * have the same value, return the lowest value. If all three numbers
@@ -33,10 +54,19 @@ public class Homework6 {
 	 * to receive full credit
 	 */
 	public int mid() {
-		String s + int a + int b + int c = b;
-		b / 4;
+		if ((a > b) || (c > b)) {
+			return b;
+		} else if ((b > a) || (c > a)) {
+				return a;
+		} else {
+			return c;
+		}
 
 	}
+
+
+
+
 
 	/* Return true if the stored numbers were provided in ascending
 	 * order. They are considered ascending if each number is greater
@@ -44,10 +74,9 @@ public class Homework6 {
 	 * >= or =<; instead use < or > and invert them with !
 	 */
 	public boolean isAscending() {
-		if (10 > 1) {
+		if ((a < b) || (b < c)) {
 			return true;
-		}
-		else {
+		} else {
 			return false;
 		}
 
@@ -58,7 +87,7 @@ public class Homework6 {
 
 		Homework6 hw6 = new Homework6("Drive", 4, 5, 6);
 
-		if (hw6.isBefore("Cars")) {
+		if (!hw6.isBefore("Cars")) {
 			System.out.println("Pass 1");
 		} else {
 			System.out.println("Fail 1");
